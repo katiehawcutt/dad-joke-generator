@@ -9,7 +9,7 @@ header {
   align-items: center;
   justify-items: center;
   margin: 0;
-  border-bottom: solid 2px black;
+  border-bottom: solid 5px black;
   background-image: url(./dadJokeImages/beer.PNG);
   background-size: 60px;
   background-repeat: repeat;
@@ -98,30 +98,27 @@ p {
 }
 
 #thumbs-up {
-    height: 90px;
-    width: 90px;
-    background-image: url(./dadJokeImages/joy.png);
-    background-size: 70px;
-    padding: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: solid black 5px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-
-
+  height: 90px;
+  width: 90px;
+  background-image: url(./dadJokeImages/joy.png);
+  background-size: 70px;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid black 5px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 #thumbs-down {
-    height: 90px;
-    width: 90px;
-    background-image: url(./dadJokeImages/poo.png);
-    background-size: 70px;
-    padding: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: solid black 5px;
-    margin-top: 30px;
-    border-radius: 10px;
-
+  height: 90px;
+  width: 90px;
+  background-image: url(./dadJokeImages/poo.png);
+  background-size: 70px;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid black 5px;
+  margin-top: 30px;
+  border-radius: 10px;
 }

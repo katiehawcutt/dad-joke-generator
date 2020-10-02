@@ -4,7 +4,10 @@ const thumbsUp = document.querySelector("#thumbs-up");
 const thumbsDown = document.querySelector("#thumbs-down");
 const hitList = document.querySelector("#hit-list");
 const shitList = document.querySelector("#shit-list");
-let joke; 
+let joke;
+let firstJoke = false;
+
+// alert("Click on the Dad for a joke!");
 
 async function getDadJokes() {
   let response = await fetch("https://icanhazdadjoke.com/", {
@@ -12,6 +15,7 @@ async function getDadJokes() {
   });
   let data = await response.json();
   joke = data.joke;
+  firstJoke = true;
   displayJoke(data.joke);
 }
 
@@ -19,23 +23,40 @@ function displayJoke(joke) {
   jokeDisplay.innerText = `"${joke}"`;
 }
 
-function addToList(e) {
-  console.log(e.target.id)
-  if (e.target.id = "hit-list"){
-    const listItem = document.createElement("li")
-  listItem.innerText = joke
-  hitList.appendChild(listItem)
-  } else {
-    const listItem = document.createElement("li")
-  listItem.innerText = joke
-  shitList.appendChild(listItem)
+// function addToList(e) {
+//   console.log(e.target.id);
+//   if ((e.target.id = "thumbs-up")) {
+//     const listItem = document.createElement("li");
+//     listItem.innerText = joke;
+//     hitList.appendChild(listItem);
+//   } else if ((e.target.id = "thumbs-down")) {
+//     const listItem = document.createElement("li");
+//     listItem.innerText = joke;
+//     shitList.appendChild(listItem);
+//   }
+// }
+
+function addToHitList() {
+  if (firstJoke === false) {
+    return;
   }
+  const listItem = document.createElement("li");
+  listItem.innerText = joke;
+  hitList.appendChild(listItem);
+}
+
+function addToShitList() {
+  if (firstJoke === false) {
+    return;
+  }
+  const listItem = document.createElement("li");
+  listItem.innerText = joke;
+  shitList.appendChild(listItem);
 }
 
 getJokeButton.addEventListener("click", getDadJokes);
-thumbsUp.addEventListener("click",addToList)
-thumbsDown.addEventListener("click", addToList)
- 
+thumbsUp.addEventListener("click", addToHitList);
+thumbsDown.addEventListener("click", addToShitList);
 
 //BIG PLAN
 //make a web page that displays dad jokes on the click of a button
@@ -50,10 +71,9 @@ thumbsDown.addEventListener("click", addToList)
 //Second step
 //Make the page interactive using the DOM / link the JS
 
-
 //add event listeners to thumb buttons
-//when thumbs up is clicked. add joke to hit list 
+//when thumbs up is clicked. add joke to hit list
 //when thumbs down is clicked. add to shit list
-    //create new list item, assign to variable. 
-    //set innerText of new list item to current joke.
-    //append list item to list. 
+//create new list item, assign to variable.
+//set innerText of new list item to current joke.
+//append list item to list.
