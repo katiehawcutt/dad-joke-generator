@@ -19,21 +19,22 @@ function displayJoke(joke) {
   jokeDisplay.innerText = `"${joke}"`;
 }
 
-function addToHitlist() {
-  const listItem = document.createElement("li")
+function addToList(e) {
+  console.log(e.target.id)
+  if (e.target.id = "hit-list"){
+    const listItem = document.createElement("li")
   listItem.innerText = joke
   hitList.appendChild(listItem)
-}
-
-function addToShitlist(){
-  const listItem = document.createElement("li")
+  } else {
+    const listItem = document.createElement("li")
   listItem.innerText = joke
   shitList.appendChild(listItem)
+  }
 }
 
 getJokeButton.addEventListener("click", getDadJokes);
-thumbsUp.addEventListener("click",addToHitlist)
-thumbsDown.addEventListener("click", addToShitlist)
+thumbsUp.addEventListener("click",addToList)
+thumbsDown.addEventListener("click", addToList)
  
 
 //BIG PLAN
