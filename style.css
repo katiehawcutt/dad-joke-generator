@@ -8,7 +8,11 @@ header {
   display: flex;
   align-items: center;
   justify-items: center;
-  background-color: blueviolet;
+  margin: 0;
+  border-bottom: solid 2px black;
+  background-image: url(./dadJokeImages/beer.PNG);
+  background-size: 140px;
+  background-repeat: repeat;
 }
 
 h1 {
@@ -16,7 +20,12 @@ h1 {
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-color: aquamarine;
+  font-family: "Bangers";
+  font-size: 80px;
+  text-align: center;
+  margin: 0;
+  text-shadow: red 2px 2px;
+  /* background-color: white; */
 }
 
 main {
@@ -25,6 +34,8 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-image: url(./dadJokeImages/bricks.PNG);
+  background-repeat: repeat;
 }
 
 section {
@@ -36,8 +47,31 @@ section {
 }
 
 .dad-button {
-    background-image: url(./dadJokeImages/buttonImage.jpeg);
-    background-size: 300px;
+  background-image: url(./dadJokeImages/buttonImage.jpeg);
+  background-size: 300px;
+  background-position: center;
   width: 300px;
   height: 300px;
+  border-radius: 10px;
+}
+
+.dad-button:hover {
+  transform: scale(1.2);
+}
+
+.joke-container {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornsilk;
+  text-align: center;
+  border-radius: 10px;
+}
+
+p {
+  margin: 30px;
+  font-family: "Courier Prime";
+  font-size: 20px;
 }
