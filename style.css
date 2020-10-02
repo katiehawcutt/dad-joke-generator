@@ -40,18 +40,19 @@ main {
 
 section {
   width: 30vw;
-  height: 500px;
+  min-height: 500px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .dad-button {
   background-image: url(./dadJokeImages/buttonImage.jpeg);
-  background-size: 300px;
+  background-size: 400px;
   background-position: center;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 10px;
 }
 
@@ -60,8 +61,8 @@ section {
 }
 
 .joke-container {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,4 +75,14 @@ p {
   margin: 30px;
   font-family: "Courier Prime";
   font-size: 20px;
+}
+
+.history-box{
+    height: 300px;
+    width: 400px;
+    background-color: cornsilk;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow-y: scroll;
 }
