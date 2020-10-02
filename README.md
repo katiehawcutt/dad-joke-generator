@@ -31,7 +31,6 @@ fetch("https://pokeapi.co/api/v2/pokemon/1/");
 - [Trivia API](https://opentdb.com/api_config.php)
 
 ```js
-// fetch 10 random questions
 fetch("https://opentdb.com/api.php?amount=10");
 ```
 
