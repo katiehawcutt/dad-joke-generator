@@ -40,19 +40,38 @@ function addToHitList() {
   if (firstJoke === false) {
     return;
   }
-  const listItem = document.createElement("li");
-  listItem.innerText = joke;
-  hitList.appendChild(listItem);
+  let check = checkJoke()
+  if (check === false){
+    const listItem = document.createElement("li");
+    listItem.innerText = joke;
+    hitList.appendChild(listItem);
 }
+  }
+  
 
 function addToShitList() {
   if (firstJoke === false) {
     return;
   }
+  let check = checkJoke()
+  if (check === false){
   const listItem = document.createElement("li");
   listItem.innerText = joke;
   shitList.appendChild(listItem);
 }
+}
+
+function checkJoke(){
+  const listItems = document.querySelectorAll("li")
+  const arrayList = Array.from(listItems)
+  let result = arrayList.forEach((jokeItem)=>{
+    return jokeItem === joke;
+  })
+  return result;
+}
+
+
+
 
 getJokeButton.addEventListener("click", getDadJokes);
 thumbsUp.addEventListener("click", addToHitList);
@@ -77,3 +96,14 @@ thumbsDown.addEventListener("click", addToShitList);
 //create new list item, assign to variable.
 //set innerText of new list item to current joke.
 //append list item to list.
+
+// stop a joke being added to both lists.
+  //if a joke is already added to a list. we dont want to be able to duplicate it on the current list
+  // OR add it to the other list
+
+// grab all list items using queryselectorall.
+//use array.from to make listItem array 
+
+//compare current joke to jokeList
+    //if it is on the jokeList - dont do anything
+    // else add joke to list.
