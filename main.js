@@ -7,8 +7,6 @@ const shitList = document.querySelector("#shit-list");
 let joke;
 let firstJoke = false;
 
-// alert("Click on the Dad for a joke!");
-
 async function getDadJokes() {
   let response = await fetch("https://icanhazdadjoke.com/", {
     headers: { accept: "application/json" },
@@ -22,19 +20,6 @@ async function getDadJokes() {
 function displayJoke(joke) {
   jokeDisplay.innerText = `"${joke}"`;
 }
-
-// function addToList(e) {
-//   console.log(e.target.id);
-//   if ((e.target.id = "thumbs-up")) {
-//     const listItem = document.createElement("li");
-//     listItem.innerText = joke;
-//     hitList.appendChild(listItem);
-//   } else if ((e.target.id = "thumbs-down")) {
-//     const listItem = document.createElement("li");
-//     listItem.innerText = joke;
-//     shitList.appendChild(listItem);
-//   }
-// }
 
 function addToHitList() {
   if (firstJoke === false) {
