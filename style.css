@@ -33,6 +33,7 @@ h3 {
   font-family: "Bangers";
   font-size: 30px;
   text-shadow: red 1px 1px;
+  /* position: sticky; */
 }
 
 main {
@@ -84,6 +85,14 @@ p {
   margin: 30px;
   font-family: "Courier Prime";
   font-size: 20px;
+  font-weight: bold;
+}
+
+li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-family: "Courier Prime";
+  font-size: 16px;
 }
 
 .history-box {
@@ -95,6 +104,7 @@ p {
   margin-bottom: 30px;
   overflow-y: scroll;
   border: solid black 5px;
+  /* position: relative; */
 }
 
 #thumbs-up {
