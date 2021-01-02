@@ -1,54 +1,17 @@
-# Fetch Hackathon
+# Dad Jokes Generator
 
-Today we will be using our new found skills to make apps that request data from a server.
+![Our Dad Joke's Generator](./dadJokeImages/dadJokesPage.PNG)
 
-## Step 1 - Getting data and brainstorming (20 - 30 mins)
+#### School of Code Bootcamp - Hackathon Week 2
 
-Here are some APIs that we can use for free. All but the dad jokes one simply need the url. Each api has documentation on how to ask for different data by changing the url. We have included an example fetch for each one to help you get started.
+###### October 2020
 
-👉 Visit the documentation for the APIs, use JS to request some data and see what you get back. From there, brainstorm what you could make with your knowledge of JavaScript, the DOM and the data you have received.
+_Our Week 2 hackathon was to make an app that requested data from a server using `fetch()`. We decided to make a Dad Jokes Generator which used a dad jokes API. When you click the button on the left a joke appears in the middle. You can then choose to add the joke to the hit list or the sh\*\*t list by pressing either the laughing face emoji or the poo emoji!_
 
-### Star Wars API
+### Main Learning Points:
 
-- [Star Wars API](https://swapi.dev/)
-
-```js
-// fetch the first star wars character
-fetch("https://swapi.dev/api/people/1");
-```
-
-### Pokemon API
-
-- [Pokemon API](https://pokeapi.co/)
-
-```js
-// fetch the first pokemon
-fetch("https://pokeapi.co/api/v2/pokemon/1/");
-```
-
-### Trivia API
-
-- [Trivia API](https://opentdb.com/api_config.php)
-
-```js
-fetch("https://opentdb.com/api.php?amount=10");
-```
-
-### Dad Jokes API
-
-- [Dad Jokes API](https://icanhazdadjoke.com/api)
-
-```js
-// fetch a dad joke
-fetch("https://icanhazdadjoke.com/", {
-  headers: { accept: "application/json" },
-});
-```
-
-## Step 2 - Break down the problem (20 - 30 mins)
-
-Now that you have got an idea of what data you are working with, and have come up with an idea of what you could achieve, break down the problem into smaller chunks. Keep breaking the problem down until you can translate your plan into code. You should dream big, break it down and start small. If your plan turns out to be overly ambitious, then be smart and reign it in. If you have been too conservative then try and push yourself.
-
-## Step 3 - Build (The rest of the day!)
-
-Translate your plan into code, turn your ideas into reality. Enjoy!
+- Using `fetch()` to get data from an API
+- Reading API docs and understanding how to use them
+- We broke the problem down until it was small enough for us to be able to translate it into code
+- We used all of the knowledge we had learned over the first two weeks of the bootcamp to make our joke generator which included variables, types, scope, functions, helper functions, objects, arrays, array methods, the DOM, asynchronous programming, async, await, `fetch()`, CSS and sematic HTML.
+- We tried to make it unbreakable by only allowing certain buttons to be pressed at certain times, and only allowing jokes to be added to the lists once. This required some more tricky programming but we got there (and without help!). We were both super pleased with the outcome.
