@@ -3,11 +3,11 @@ body {
 }
 
 header {
-  height: 20vh;
+  height: 17vh;
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   margin: 0;
   border-bottom: solid 5px black;
   background-image: url(./dadJokeImages/beer.PNG);
@@ -16,27 +16,27 @@ header {
 }
 
 h1 {
-  height: 100px;
-  width: 100vw;
   display: flex;
   justify-content: center;
   font-family: "Bangers";
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   margin: 0;
-  text-shadow: red 2px 2px;
+  text-shadow: red 1px 1px;
 }
 
 h3 {
-  margin: 20px;
+  margin: 5px;
+  margin-top: 10px;
   text-decoration: underline;
   font-family: "Bangers";
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: red 1px 1px;
   position: sticky;
-  top: 3px;
+  top: 0px;
   background-color: cornsilk;
   padding: 15px;
+  letter-spacing: 2px;
 }
 
 main {
@@ -60,10 +60,10 @@ section {
 
 .dad-button {
   background-image: url(./dadJokeImages/buttonImage.jpeg);
-  background-size: 320px;
+  background-size: 220px;
   background-position: center;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   border: solid black 5px;
 }
@@ -77,8 +77,8 @@ button:hover {
 }
 
 .joke-container {
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@ button:hover {
 p {
   margin: 30px;
   font-family: "Courier Prime";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -105,22 +105,22 @@ li {
 }
 
 .history-box {
-  height: 200px;
-  width: 400px;
+  height: 150px;
+  width: 350px;
   background-color: cornsilk;
   border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   overflow-y: scroll;
   border: solid black 5px;
   scrollbar-color: red #93645b;
 }
 
 #thumbs-up {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
   background-image: url(./dadJokeImages/joy.png);
-  background-size: 70px;
+  background-size: 50px;
   padding: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,10 +130,10 @@ li {
 }
 
 #thumbs-down {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
   background-image: url(./dadJokeImages/poo.png);
-  background-size: 70px;
+  background-size: 50px;
   padding: 10px;
   background-position: center;
   background-repeat: no-repeat;
